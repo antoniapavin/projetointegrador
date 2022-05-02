@@ -1,0 +1,30 @@
+#PerfilBook, #ListaFavoritos, #ConteudoBook {
+   border: solid 1px black;
+}
+
+#PerfilBook {
+    padding: 10px;
+    background-color: #12568A;
+    height: 45px;
+}
+aside {
+  grid-area: sidenav;
+  padding: 10px;
+  height: 100%;
+  height: 100px;
+}
+#ConteudoBook {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#app {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: 
+      "header PerfilBook"
+      "sidenav ListaFavoritos"
+      "main ConteudoBook";
+  }
